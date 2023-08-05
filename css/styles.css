@@ -236,9 +236,9 @@ aside svg {
     background-color: var(--primary-link-color);
     color: white;
     font-weight: bold;
-    padding: 2px 5px;
+    padding: 2px 5px 5px 5px;
     font-size: 1.1rem;
-    box-shadow: 2px 2px 5px var(--primary-link-hover-color);
+    box-shadow: 2px 2px 5px #AF758F;
 }
 
 .favicon {
