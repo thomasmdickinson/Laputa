@@ -1,4 +1,4 @@
-![Laputa](favicon-32x32.png?raw=true)
+![Laputa](favicon-original.jpg)
 
 A fork of [_traichu by Trssley](https://github.com/Tressley/_traichu).
 
