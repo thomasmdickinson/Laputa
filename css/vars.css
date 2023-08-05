@@ -12,6 +12,12 @@
     --color-orange: hsl(var(--color-orange-hsl));
     --color-white-hsl: 60 100% 99%; /* #FFFFFC */
     --color-white: hsl(var(--color-white-hsl));
+    
+    --primary-background-color: #CDF0EB;
+    --primary-font-color: hsl(var(--color-black-hsl) / 0.75);
+    --primary-link-color: #F0C141;
+    --primary-link-hover-color: #B47D2A;
+    
 
     /* Font-families */
     --font-monospace: "Fira Code", ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
@@ -33,6 +39,7 @@
 }
 
 /* Dark Mode */
+/*
 @media (prefers-color-scheme: dark) {
     :root {
         --primary-background-color: var(--color-black);
@@ -41,8 +48,9 @@
         --primary-link-hover-color: var(--color-white);
     }
 }
-
+*/
 /* Light Mode */
+/*
 @media (prefers-color-scheme: light) {
     :root {
         --primary-background-color: hsl(var(--color-black-hsl) / 0.075);
@@ -51,3 +59,4 @@
         --primary-link-hover-color: var(--color-black);
     }
 }
+*/

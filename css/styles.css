@@ -1,7 +1,7 @@
 body {
     background-color: var(--primary-background-color);
     color: var(--primary-font-color);
-    font-family: var(--font-monospace);
+    font-family: 'Montserrat';
     font-size: var(--font-size-body);
 }
 
@@ -13,7 +13,7 @@ main {
     min-height: 100vh;
 }
 
-#traichu {
+#laputa {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -48,13 +48,13 @@ header {
 
 #date,
 #location {
-    color: var(--primary-link-hover-color);
+    color: #AF758F;
     font-weight: 700;
 }
 
 #time,
 #details {
-    color: var(--primary-link-color);
+    color: #DD95B6;
     text-transform: capitalize;
 }
 
@@ -69,11 +69,48 @@ header {
 
 aside {
     display: flex;
-    justify-content: space-around;
+    position:absolute;
+    margin: 0 auto;
+    position: relative;
+    height: 17rem;
 }
 
 aside img,
-aside svg { height: 4.5rem; }
+aside svg { 
+  height: 15rem; 
+  box-shadow: 5px 5px 10px #143777;
+}
+
+.hero-bg {
+  position:absolute;
+  opacity:0.85;
+  width: 17rem;
+  height: 17rem;
+  opacity: .8;
+  margin-left: -1em;
+  margin-top: -1em;
+  box-shadow: 5px 5px 10px var(--primary-link-hover-color);
+}
+
+.hero-bg-1 {
+  background: var(--primary-link-color);
+  box-shadow: 5px 5px 10px var(--primary-link-hover-color);
+  z-index:-1;
+}
+.hero-bg-2 {
+  background: #DD95B6;  
+  box-shadow: 5px 5px 20px #AF758F;
+  margin-left: -1.2em;
+  margin-top: -1.2em;
+  z-index:-2;
+}
+.hero-bg-3 {
+  background: #56BCC7;  
+  box-shadow: 5px 5px 30px #3B85A2;
+  margin-left: -0.9em;
+  margin-top: -1.4em;
+  z-index:-3;
+}
 
 #dock ul {
     display: flex;
@@ -166,7 +203,7 @@ aside svg { height: 4.5rem; }
 
 #search input:focus {
     background-color: hsl(var(--color-white-hsl) / 0.025);
-    border-color: var(--color-orange);
+    border-color: #AF758F;
     outline-color: hsl(var(--color-orange-hsl) / 0.25);
 }
 
@@ -179,6 +216,7 @@ aside svg { height: 4.5rem; }
 
 #bookmarks ul {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: space-around;
     list-style-type: none;
@@ -192,6 +230,15 @@ aside svg { height: 4.5rem; }
     flex-direction: row;
     line-height: 1;
     margin-bottom: var(--spacing-xs);
+}
+
+#bookmarks li.list-head {
+    background-color: var(--primary-link-color);
+    color: white;
+    font-weight: bold;
+    padding: 2px 5px;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 5px var(--primary-link-hover-color);
 }
 
 .favicon {
@@ -231,19 +278,23 @@ aside svg { height: 4.5rem; }
 @media screen and (min-width: 48em) {
     header { display: flex; }
     
-    #traichu {
+    #laputa {
         padding: 0;
-        width: 45rem; /* 720px */
+        width: 50rem; /* 720px */
     }
-
+    
+    #bookmarks ul {
+        width: 150px;
+    }
+    
     aside img,
-    aside svg { height: 7.5rem; }
+    aside svg { height: 15rem; }
 
-    #dock ul {
+/*    #dock ul {
         column-gap: 0;
         justify-content: space-around;
         padding: 0;
-    }
+    }*/
 
     #bookmarks { flex-direction: row; }
 }

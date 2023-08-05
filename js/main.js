@@ -7,7 +7,7 @@ function dateTime() {
 }
 
 function weatherBalloon(cityID) {
-	var apiKey = ''; //OpenWeather API key
+	var apiKey = '9ecde3df70e2539152751e2415acd09b'; //OpenWeather API key
 	fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID + '&appid=' + apiKey)
 		.then(function(resp) {
 			return resp.json()
@@ -21,7 +21,7 @@ function weatherBalloon(cityID) {
 		});
 }
 
-function traichu() {
+function laputa() {
 	dateTime();
-	weatherBalloon(1850147); //OpenWeather city ID
+  	weatherBalloon(4930956); //OpenWeather city ID
 }
