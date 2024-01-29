@@ -13,10 +13,10 @@
     --color-white-hsl: 60 100% 99%; /* #FFFFFC */
     --color-white: hsl(var(--color-white-hsl));
     
-    --primary-background-color: #CDF0EB;
+    --primary-background-color: #d9edfc;
     --primary-font-color: hsl(var(--color-black-hsl) / 0.75);
-    --primary-link-color: #F0C141;
-    --primary-link-hover-color: #B47D2A;
+    --primary-link-color: #eeb09e;
+    --primary-link-hover-color: #d69e8e;
     
 
     /* Font-families */
